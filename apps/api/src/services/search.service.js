@@ -1,7 +1,6 @@
-import { fuzzyMatch } from '../utils/fuzzyMatch.js';
+﻿import { fuzzyMatch } from '../utils/fuzzyMatch.js';
 import Ingredient from '../models/Ingredient.js';
 import Dish from '../models/Dish.js';
-import { env } from '../config/env.js';
 import { chatJSON, aiEnabled } from './ai.service.js';
 
 function withTimeout(ms) {
@@ -118,3 +117,4 @@ export async function hybridSearch(q) {
     aiEnabled: aiEnabled()
   };
 }
+

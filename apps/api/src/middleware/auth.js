@@ -9,7 +9,8 @@ export function auth(req,res,next){
     const payload=jwt.verify(token,env.JWT_ACCESS_SECRET);
     req.user=payload;
     next();
-  }catch(e){
+  }catch{
     return next(new AppError('Unauthorized',401,'UNAUTHORIZED'));
   }
 }
+

@@ -1,9 +1,9 @@
-import { useState, useEffect } from 'react';
+﻿import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useMutation } from '@tanstack/react-query';
 import { api } from '../api/client.js';
 import { useAuth } from '../store/auth.js';
-import { Leaf, Drumstick, Flower2, Flame, Droplets, IndianRupee, MapPin, Users, Plus, Trash2, ArrowRight, ArrowLeft, Check } from 'lucide-react';
+import { Leaf, Drumstick, Flower2, Flame, Droplets, MapPin, Users, Plus, Trash2, ArrowRight, ArrowLeft, Check } from 'lucide-react';
 
 const diets = [
   { value: 'veg', label: 'Veg', sub: 'No meat, egg', icon: Leaf, color: 'text-[#1FAE7A]', border: 'border-[#1FAE7A]', bg: 'bg-[#1FAE7A]/10' },
@@ -34,7 +34,7 @@ function Slider({ icon: Icon, label, value, onChange, labels, color }) {
 
 export default function Onboarding() {
   const navigate = useNavigate();
-  const { user, loadMe, logout } = useAuth();
+  const { user, loadMe } = useAuth();
   useEffect(() => {
     if (user && user.onboardingComplete) {
       navigate('/app', { replace: true });
@@ -116,12 +116,12 @@ export default function Onboarding() {
             <div className='space-y-5'>
               <h2 className='font-semibold text-[#14213D]'>Weekly grocery budget</h2>
               <div className='text-center'>
-                <p className='text-4xl font-bold text-[#1FAE7A]' style={{ fontFamily: 'Space Grotesk' }}>₹{budget.toLocaleString('en-IN')}</p>
+                <p className='text-4xl font-bold text-[#1FAE7A]' style={{ fontFamily: 'Space Grotesk' }}>â‚¹{budget.toLocaleString('en-IN')}</p>
                 <p className='text-sm text-[#6B7280] mt-1'>per week</p>
               </div>
               <input type='range' min='1000' max='10000' step='500' value={budget} onChange={e => setBudget(Number(e.target.value))}
                 className='w-full' style={{ accentColor: '#1FAE7A' }} />
-              <div className='flex justify-between text-xs text-[#6B7280]'><span>₹1,000</span><span>₹10,000</span></div>
+              <div className='flex justify-between text-xs text-[#6B7280]'><span>â‚¹1,000</span><span>â‚¹10,000</span></div>
               <div className='flex gap-2'>
                 <input value={city} onChange={e => setCity(e.target.value)} placeholder='City (e.g. Delhi)'
                   className='flex-1 border border-[#E7E9EE] rounded-lg px-3 py-2 text-sm' />
@@ -165,7 +165,7 @@ export default function Onboarding() {
           {save.isError && (
             <p className='mt-4 text-sm text-[#E1573D] bg-[#FEF2F0] rounded-lg px-3 py-2'>
               {/unauthorized/i.test(save.error.message)
-                ? 'Session expired — taking you back to sign in.'
+                ? 'Session expired â€” taking you back to sign in.'
                 : save.error.message}
             </p>
           )}
@@ -180,7 +180,7 @@ export default function Onboarding() {
             <button onClick={() => { if (!isLast) setStep(s => s + 1); else save.mutate(); }}
               disabled={save.isPending}
               className='flex-1 flex items-center justify-center gap-1.5 bg-[#14213D] text-white rounded-lg py-2.5 text-sm font-medium disabled:opacity-60 hover:bg-[#1a2d52] transition-colors'>
-              {isLast ? (save.isPending ? 'Saving…' : 'Start cooking!') : 'Continue'} <ArrowRight size={15} />
+              {isLast ? (save.isPending ? 'Savingâ€¦' : 'Start cooking!') : 'Continue'} <ArrowRight size={15} />
             </button>
           </div>
         </div>
@@ -188,3 +188,4 @@ export default function Onboarding() {
     </div>
   );
 }
+

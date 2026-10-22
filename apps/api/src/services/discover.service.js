@@ -5,14 +5,14 @@ import { chatJSON, aiEnabled } from './ai.service.js';
 function withTimeout(ms){const c=new AbortController();const t=setTimeout(()=>c.abort(),ms);return{signal:c.signal,done:()=>clearTimeout(t)};}
 function yt(q){return 'https://www.youtube.com/results?search_query='+encodeURIComponent((q||'recipe')+' recipe');}
 
-async function fetchMealDBMulti(qs, limit=15){
+async function fetchMealDBMulti(qs){
   const results=[];
   for(const q of qs){
     const {signal,done}=withTimeout(7000);
     try{
       const res=await fetch('https://www.themealdb.com/api/json/v1/1/search.php?s='+encodeURIComponent(q),{signal});
       if(res.ok){const json=await res.json();(json.meals||[]).forEach(m=>results.push(m));}
-    }catch(e){}
+    }catch{ /* ignore individual query failures */ }
     finally{done();}
   }
   const seen=new Set();
@@ -66,3 +66,4 @@ export async function discoverUniqueDishes({q,mood,state,household}={}){
   for(let i=dishes.length-1;i>0;i--){const j=Math.floor(Math.random()*((i+1)));[dishes[i],dishes[j]]=[dishes[j],dishes[i]];}
   return {aiEnabled:aiEnabled(),youtubeEnabled:Boolean(env.YOUTUBE_API_KEY),dishes:dishes.slice(0,80),videos:videos.slice(0,16)};
 }
+

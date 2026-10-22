@@ -43,6 +43,7 @@ router.post('/generate', asyncHandler(async (req,res)=>{
   const weather = await getWeather(household && household.region && household.region.lat, household && household.region && household.region.lng);
 
   const existing = await MealPlan.findOne({ householdId: req.user.householdId, date: dateStr });
+  const dishById = new Map(dishes.map(d => [String(d._id), d]));
   const currentDishBySlot = {};
   for (const slot of ALL_SLOTS) {
     const s = existing && existing.slots && existing.slots[slot];
@@ -59,7 +60,6 @@ router.post('/generate', asyncHandler(async (req,res)=>{
 
   // Derive recently-eaten cuisines so small eligible pools still surface
   // variety instead of cycling the same cuisine every regeneration.
-  const dishById = new Map(dishes.map(d => [String(d._id), d]));
   const recentCuisines = [...new Set([...excludeIds].map(id => dishById.get(String(id))?.cuisine).filter(Boolean))];
 
   const baseArgs = {
@@ -152,7 +152,6 @@ router.post('/week', asyncHandler(async (req,res)=>{
   const recentFb = await Feedback.find({ householdId: req.user.householdId }).sort({ createdAt: -1 }).limit(20).lean();
   const weather = await getWeather(household && household.region && household.region.lat, household && household.region && household.region.lng);
 
-  const dishById = new Map(dishes.map(d => [String(d._id), d]));
   const baseExclude = new Set([
     ...recentFb.map(f => String(f.dishId)),
     ...(profile.recentDishIds || []).map(String)
@@ -258,3 +257,4 @@ router.patch('/:date/:slot/status', asyncHandler(async (req,res)=>{
 }));
 
 export default router;
+

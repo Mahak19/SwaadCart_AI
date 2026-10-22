@@ -1,5 +1,4 @@
 ﻿import { Router } from 'express';
-import { auth } from '../middleware/auth.js';
 import { asyncHandler } from '../utils/asyncHandler.js';
 import Ingredient from '../models/Ingredient.js';
 import Dish from '../models/Dish.js';
@@ -33,3 +32,4 @@ router.get('/dishes/:id', asyncHandler(async (req, res) => {
 }));
 
 export default router;
+

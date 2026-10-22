@@ -2,7 +2,6 @@
 import { auth } from '../middleware/auth.js';
 import { householdScope } from '../middleware/householdScope.js';
 import { asyncHandler } from '../utils/asyncHandler.js';
-import Feedback from '../models/Feedback.js';
 import TasteProfile from '../models/TasteProfile.js';
 import Dish from '../models/Dish.js';
 import GroceryList from '../models/GroceryList.js';
@@ -39,3 +38,4 @@ router.post('/', asyncHandler(async (req,res)=>{
 }));
 
 export default router;
+

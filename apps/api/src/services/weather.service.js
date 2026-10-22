@@ -22,8 +22,9 @@ export async function getWeather(lat, lng) {
     };
     await WeatherCache.findOneAndUpdate({ key }, { key, data, fetchedAt: new Date() }, { upsert: true });
     return { ...data, source: 'live' };
-  } catch (e) {
+  } catch {
     if (cached?.data) return { ...cached.data, source: 'stale-cache' };
     return FALLBACK;
   }
 }
+

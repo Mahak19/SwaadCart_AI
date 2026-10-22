@@ -55,7 +55,8 @@ export const refresh = asyncHandler(async (req,res)=>{
     if(!user) throw new AppError('Invalid',401,'UNAUTHORIZED');
     res.cookie('accessToken', signAccess(user), { httpOnly:true, sameSite:'lax', secure:false });
     res.json({ ok:true });
-  }catch(e){
+  }catch{
     throw new AppError('Invalid refresh',401,'UNAUTHORIZED');
   }
 });
+
