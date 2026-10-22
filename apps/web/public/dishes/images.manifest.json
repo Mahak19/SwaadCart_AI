@@ -1,0 +1,817 @@
+{
+  "Poha": {
+    "file": "dishes/poha.jpg",
+    "title": "Poha.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Poha.jpg/960px-Poha.jpg"
+  },
+  "Upma": {
+    "file": "dishes/upma.jpg",
+    "title": "Upma of Corn.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Upma_of_Corn.jpg/960px-Upma_of_Corn.jpg"
+  },
+  "Aloo Paratha": {
+    "file": "dishes/aloo-paratha.jpg",
+    "title": "Aloo Paratha.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Aloo_Paratha.jpg/960px-Aloo_Paratha.jpg"
+  },
+  "Gobhi Paratha": {
+    "file": "dishes/gobhi-paratha.jpg",
+    "title": "Nawabi Gobhi With ajwain Paratha by Fatima.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Nawabi_Gobhi_With_ajwain_Paratha_by_Fatima.jpg/960px-Nawabi_Gobhi_With_ajwain_Paratha_by_Fatima.jpg"
+  },
+  "Paneer Paratha": {
+    "file": "dishes/paneer-paratha.jpg",
+    "title": "Awadhi palak paneer paratha dahi.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Awadhi_palak_paneer_paratha_dahi.jpg"
+  },
+  "Methi Thepla": {
+    "file": "dishes/methi-thepla.jpg",
+    "title": "Mung Dal - Bhindi with Methi Thepla.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Mung_Dal_-_Bhindi_with_Methi_Thepla.jpg/960px-Mung_Dal_-_Bhindi_with_Methi_Thepla.jpg"
+  },
+  "Missi Poori": {
+    "file": "dishes/missi-poori.jpg",
+    "title": "Missi Roti.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Missi_Roti.jpg/960px-Missi_Roti.jpg"
+  },
+  "Puri Bhaji": {
+    "file": "dishes/puri-bhaji.jpg",
+    "title": "Puri Bhaji.JPG",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Puri_Bhaji.JPG/960px-Puri_Bhaji.JPG"
+  },
+  "Chole Bhature": {
+    "file": "dishes/chole-bhature.jpg",
+    "title": "Bikaner chole bhature.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Bikaner_chole_bhature.jpg/960px-Bikaner_chole_bhature.jpg"
+  },
+  "Idli": {
+    "file": "dishes/idli.jpg",
+    "title": "Idli.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Idli.jpg/960px-Idli.jpg"
+  },
+  "Onion Dosa": {
+    "file": "dishes/onion-dosa.jpg",
+    "title": "Onion dosa.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Onion_dosa.jpg/960px-Onion_dosa.jpg"
+  },
+  "Idiyappam": {
+    "file": "dishes/idiyappam.jpg",
+    "title": "Idiyappam.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Idiyappam.jpg/960px-Idiyappam.jpg"
+  },
+  "Appam": {
+    "file": "dishes/appam.jpg",
+    "title": "Appam - அப்பம்.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Appam_-_%E0%AE%85%E0%AE%AA%E0%AF%8D%E0%AE%AA%E0%AE%AE%E0%AF%8D.jpg/960px-Appam_-_%E0%AE%85%E0%AE%AA%E0%AF%8D%E0%AE%AA%E0%AE%AE%E0%AF%8D.jpg"
+  },
+  "Sabudana Khichdi": {
+    "file": "dishes/sabudana-khichdi.jpg",
+    "title": "Sabudana Khichdi.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Sabudana_Khichdi.jpg/960px-Sabudana_Khichdi.jpg"
+  },
+  "Oats Upma": {
+    "file": "dishes/oats-upma.jpg",
+    "title": "Oats Upma...yummy.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Oats_Upma...yummy.jpg/960px-Oats_Upma...yummy.jpg"
+  },
+  "Vegetable Sandwich": {
+    "file": "dishes/vegetable-sandwich.jpg",
+    "title": "Vegetable Sandwich.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Vegetable_Sandwich.jpg/960px-Vegetable_Sandwich.jpg"
+  },
+  "Grilled Cheese Sandwich": {
+    "file": "dishes/grilled-cheese-sandwich.jpg",
+    "title": "Grilled cheese sandwich.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/8/89/Grilled_cheese_sandwich.jpg"
+  },
+  "Bread Omelette": {
+    "file": "dishes/bread-omelette.jpg",
+    "title": "Bread Omelette 2.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Bread_Omelette_2.jpg/960px-Bread_Omelette_2.jpg"
+  },
+  "Masala Omelette": {
+    "file": "dishes/masala-omelette.jpg",
+    "title": "Masala omelette.JPG",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Masala_omelette.JPG/960px-Masala_omelette.JPG"
+  },
+  "Boiled Egg Breakfast": {
+    "file": "dishes/boiled-egg-breakfast.jpg",
+    "title": "Boiled Egg - Crossection.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Boiled_Egg_-_Crossection.jpg/1280px-Boiled_Egg_-_Crossection.jpg"
+  },
+  "Moong Dal Chilla": {
+    "file": "dishes/moong-dal-chilla.jpg",
+    "title": "Zorro Chilla (Lycalopex griseus).jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Zorro_Chilla_%28Lycalopex_griseus%29.jpg/960px-Zorro_Chilla_%28Lycalopex_griseus%29.jpg"
+  },
+  "Ragi Porridge": {
+    "file": "dishes/ragi-porridge.jpg",
+    "title": "Ragi Porridge.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/5/55/Ragi_Porridge.jpg"
+  },
+  "Fruit Bowl": {
+    "file": "dishes/fruit-bowl.jpg",
+    "title": "Fruit Bowl MET 176253.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Fruit_Bowl_MET_176253.jpg/960px-Fruit_Bowl_MET_176253.jpg"
+  },
+  "Dhokla": {
+    "file": "dishes/dhokla.jpg",
+    "title": "Besan Dhokla - Howrah 2015-04-26 8478.JPG",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Besan_Dhokla_-_Howrah_2015-04-26_8478.JPG/960px-Besan_Dhokla_-_Howrah_2015-04-26_8478.JPG"
+  },
+  "Rava Idli": {
+    "file": "dishes/rava-idli.jpg",
+    "title": "Rava Idli, Kamat Hotel.JPG",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Rava_Idli%2C_Kamat_Hotel.JPG/960px-Rava_Idli%2C_Kamat_Hotel.JPG"
+  },
+  "Pesarattu": {
+    "file": "dishes/pesarattu.jpg",
+    "title": "Pesarattu with ginger chutney.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Pesarattu_with_ginger_chutney.jpg"
+  },
+  "Aloo Poori": {
+    "file": "dishes/aloo-poori.jpg",
+    "title": "Khatte Mithe Aloo ( sweet & sour potato curry ) with Maida Poori ( Deep Fried Puffy Bread).jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Khatte_Mithe_Aloo_%28_sweet_%26_sour_potato_curry_%29_with_Maida_Poori_%28_Deep_Fried_Puffy_Bread%29.jpg/960px-Khatte_Mithe_Aloo_%28_sweet_%26_sour_potato_curry_%29_with_Maida_Poori_%28_Deep_Fried_Puffy_Bread%29.jpg"
+  },
+  "Vegetable Poha Cutlet": {
+    "file": "dishes/vegetable-poha-cutlet.jpg",
+    "title": "Indian Poha cutlet.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/6/64/Indian_Poha_cutlet.jpg"
+  },
+  "Sabudana Vada": {
+    "file": "dishes/sabudana-vada.jpg",
+    "title": "Sabudana vada.JPG",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Sabudana_vada.JPG"
+  },
+  "Rava Dosa": {
+    "file": "dishes/rava-dosa.jpg",
+    "title": "Rava dosa.JPG",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Rava_dosa.JPG/960px-Rava_dosa.JPG"
+  },
+  "Kanchipuram Idli": {
+    "file": "dishes/kanchipuram-idli.jpg",
+    "title": "Idli.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Idli.jpg/960px-Idli.jpg"
+  },
+  "Akuri": {
+    "file": "dishes/akuri.jpg",
+    "title": "Paneer Akuri.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Paneer_Akuri.jpg"
+  },
+  "Hakka Noodles": {
+    "file": "dishes/hakka-noodles.jpg",
+    "title": "Hakka Noodles, Veg Manchurian PK009.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Hakka_Noodles%2C_Veg_Manchurian_PK009.jpg"
+  },
+  "Bread Halwa": {
+    "file": "dishes/bread-halwa.jpg",
+    "title": "Bread halwa.JPG",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Bread_halwa.JPG/960px-Bread_halwa.JPG"
+  },
+  "Dal Tadka": {
+    "file": "dishes/dal-tadka.jpg",
+    "title": "Tadka Dal.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Tadka_Dal.jpg"
+  },
+  "Dal Fry": {
+    "file": "dishes/dal-fry.jpg",
+    "title": "Dal Fry masala.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Dal_Fry_masala.jpg"
+  },
+  "Yellow Rice": {
+    "file": "dishes/yellow-rice.jpg",
+    "title": "Yellow rice.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Yellow_rice.jpg"
+  },
+  "Jeera Rice": {
+    "file": "dishes/jeera-rice.jpg",
+    "title": "Jeera-rice.JPG",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Jeera-rice.JPG/960px-Jeera-rice.JPG"
+  },
+  "Vegetable Pulao": {
+    "file": "dishes/vegetable-pulao.jpg",
+    "title": "Vegetable pulao.JPG",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Vegetable_pulao.JPG/960px-Vegetable_pulao.JPG"
+  },
+  "Veg Biryani": {
+    "file": "dishes/veg-biryani.jpg",
+    "title": "Veg biryani.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Veg_biryani.jpg/960px-Veg_biryani.jpg"
+  },
+  "Lemon Rice": {
+    "file": "dishes/lemon-rice.jpg",
+    "title": "Lemon rice and bhajiya.JPG",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Lemon_rice_and_bhajiya.JPG/960px-Lemon_rice_and_bhajiya.JPG"
+  },
+  "Dal Khichdi": {
+    "file": "dishes/dal-khichdi.jpg",
+    "title": "Spicy Khichdi.JPG",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Spicy_Khichdi.JPG/960px-Spicy_Khichdi.JPG"
+  },
+  "Rajma Chawal": {
+    "file": "dishes/rajma-chawal.jpg",
+    "title": "Rajma Chawal.JPG",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Rajma_Chawal.JPG/960px-Rajma_Chawal.JPG"
+  },
+  "Chole Chawal": {
+    "file": "dishes/chole-chawal.jpg",
+    "title": "Chole Chawal.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Chole_Chawal.jpg"
+  },
+  "Sambar Rice": {
+    "file": "dishes/sambar-rice.jpg",
+    "title": "Rice-sambar-salad.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Rice-sambar-salad.jpg/960px-Rice-sambar-salad.jpg"
+  },
+  "Rasam Rice": {
+    "file": "dishes/rasam-rice.jpg",
+    "title": "Rice-ta.rasam-Tamil Nadu.JPG",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Rice-ta.rasam-Tamil_Nadu.JPG/960px-Rice-ta.rasam-Tamil_Nadu.JPG"
+  },
+  "Bisi Bele Bath": {
+    "file": "dishes/bisi-bele-bath.jpg",
+    "title": "Bisi Bele Bath.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Bisi_Bele_Bath.jpg/960px-Bisi_Bele_Bath.jpg"
+  },
+  "Lemon Khichdi": {
+    "file": "dishes/lemon-khichdi.jpg",
+    "title": "Spicy Khichdi.JPG",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Spicy_Khichdi.JPG/960px-Spicy_Khichdi.JPG"
+  },
+  "Paneer Butter Masala": {
+    "file": "dishes/paneer-butter-masala.jpg",
+    "title": "Rotti and Paneer Butter Masala.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Rotti_and_Paneer_Butter_Masala.jpg/960px-Rotti_and_Paneer_Butter_Masala.jpg"
+  },
+  "Palak Paneer": {
+    "file": "dishes/palak-paneer.jpg",
+    "title": "Palak Paneer (Cottage cheese in spinach gravy).jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Palak_Paneer_%28Cottage_cheese_in_spinach_gravy%29.jpg/960px-Palak_Paneer_%28Cottage_cheese_in_spinach_gravy%29.jpg"
+  },
+  "Kadhai Paneer": {
+    "file": "dishes/kadhai-paneer.jpg",
+    "title": "Kadhai paneer (paneer shimlamirch).jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Kadhai_paneer_%28paneer_shimlamirch%29.jpg"
+  },
+  "Shahi Paneer": {
+    "file": "dishes/shahi-paneer.jpg",
+    "title": "Shahi paneer and palak paneer.JPG",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Shahi_paneer_and_palak_paneer.JPG/960px-Shahi_paneer_and_palak_paneer.JPG"
+  },
+  "Chana Masala": {
+    "file": "dishes/chana-masala.jpg",
+    "title": "Chana masala gravy.JPG",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Chana_masala_gravy.JPG/960px-Chana_masala_gravy.JPG"
+  },
+  "Aloo Gobi": {
+    "file": "dishes/aloo-gobi.jpg",
+    "title": "Aloo gobi.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Aloo_gobi.jpg/960px-Aloo_gobi.jpg"
+  },
+  "Bhindi Masala": {
+    "file": "dishes/bhindi-masala.jpg",
+    "title": "Bhindi Masala.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Bhindi_Masala.jpg/960px-Bhindi_Masala.jpg"
+  },
+  "Baingan Bharta": {
+    "file": "dishes/baingan-bharta.jpg",
+    "title": "Baingan bharta.JPG",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Baingan_bharta.JPG/960px-Baingan_bharta.JPG"
+  },
+  "Lauki Kofta": {
+    "file": "dishes/lauki-kofta.jpg",
+    "title": "Lauki Kofta.JPG",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Lauki_Kofta.JPG/960px-Lauki_Kofta.JPG"
+  },
+  "Dal Makhani": {
+    "file": "dishes/dal-makhani.jpg",
+    "title": "Dal Makhani.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Dal_Makhani.jpg"
+  },
+  "Sarson Ka Saag": {
+    "file": "dishes/sarson-ka-saag.jpg",
+    "title": "Sarsoon Ka Saag Cooked.JPG",
+    "source": "https://commons.wikimedia.org/wiki/File:Sarsoon_Ka_Saag_Cooked.JPG"
+  },
+  "Matar Paneer": {
+    "file": "dishes/matar-paneer.jpg",
+    "title": "Matar-Paneer.JPG",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Matar-Paneer.JPG/960px-Matar-Paneer.JPG"
+  },
+  "Mushroom Masala": {
+    "file": "dishes/mushroom-masala.jpg",
+    "title": "Mushroom Masala by Dr. Raju Kasambe IMG 20190701 (9).jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Mushroom_Masala_by_Dr._Raju_Kasambe_IMG_20190701_%289%29.jpg/960px-Mushroom_Masala_by_Dr._Raju_Kasambe_IMG_20190701_%289%29.jpg"
+  },
+  "Aloo Methi": {
+    "file": "dishes/aloo-methi.jpg",
+    "title": "Aloo Methi (Aaloo Methi).JPG",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Aloo_Methi_%28Aaloo_Methi%29.JPG/960px-Aloo_Methi_%28Aaloo_Methi%29.JPG"
+  },
+  "Mix Vegetable Sabzi": {
+    "file": "dishes/mix-vegetable-sabzi.jpg",
+    "title": "Sabzi polo.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Sabzi_polo.jpg/960px-Sabzi_polo.jpg"
+  },
+  "Rajma Masala": {
+    "file": "dishes/rajma-masala.jpg",
+    "title": "Rajma Masala.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Rajma_Masala.jpg/960px-Rajma_Masala.jpg"
+  },
+  "Chole": {
+    "file": "dishes/chole.jpg",
+    "title": "Chole puri halwa.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Chole_puri_halwa.jpg/960px-Chole_puri_halwa.jpg"
+  },
+  "Veg Kolhapuri": {
+    "file": "dishes/veg-kolhapuri.jpg",
+    "title": "Veg Kolhapuri.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/7/78/Veg_Kolhapuri.jpg"
+  },
+  "Gujarati Dal": {
+    "file": "dishes/gujarati-dal.jpg",
+    "title": "Gujarati Dal..JPG",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Gujarati_Dal..JPG/960px-Gujarati_Dal..JPG"
+  },
+  "Kerala Avial": {
+    "file": "dishes/kerala-avial.jpg",
+    "title": "Avial kerala recipe.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Avial_kerala_recipe.jpg/960px-Avial_kerala_recipe.jpg"
+  },
+  "Undhiyu": {
+    "file": "dishes/undhiyu.jpg",
+    "title": "Undhiyu.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Undhiyu.jpg/960px-Undhiyu.jpg"
+  },
+  "Vegetable Kofta Curry": {
+    "file": "dishes/vegetable-kofta-curry.jpg",
+    "title": "Kofta Curry (Spiced Dumplings in Gravy).jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Kofta_Curry_%28Spiced_Dumplings_in_Gravy%29.jpg/960px-Kofta_Curry_%28Spiced_Dumplings_in_Gravy%29.jpg"
+  },
+  "Samosa": {
+    "file": "dishes/samosa.jpg",
+    "title": "Samosa or Singara.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Samosa_or_Singara.jpg/960px-Samosa_or_Singara.jpg"
+  },
+  "Aloo Tikki": {
+    "file": "dishes/aloo-tikki.jpg",
+    "title": "Aloo Tikki served with chutneys.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Aloo_Tikki_served_with_chutneys.jpg/960px-Aloo_Tikki_served_with_chutneys.jpg"
+  },
+  "Bhel Puri": {
+    "file": "dishes/bhel-puri.jpg",
+    "title": "Bhel Puri at Juhu Beach.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Bhel_Puri_at_Juhu_Beach.jpg/960px-Bhel_Puri_at_Juhu_Beach.jpg"
+  },
+  "Dahi Puri": {
+    "file": "dishes/dahi-puri.jpg",
+    "title": "Dahi Puri.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Dahi_Puri.jpg/960px-Dahi_Puri.jpg"
+  },
+  "Papdi Chaat": {
+    "file": "dishes/papdi-chaat.jpg",
+    "title": "Papdi-chaat.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Papdi-chaat.jpg/960px-Papdi-chaat.jpg"
+  },
+  "Pav Bhaji": {
+    "file": "dishes/pav-bhaji.jpg",
+    "title": "Pav bhaji.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Pav_bhaji.jpg/960px-Pav_bhaji.jpg"
+  },
+  "Vada Pav": {
+    "file": "dishes/vada-pav.jpg",
+    "title": "Vada Pav.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/6/63/Vada_Pav.jpg"
+  },
+  "Misal Pav": {
+    "file": "dishes/misal-pav.jpg",
+    "title": "*Misal Pav*.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/%2AMisal_Pav%2A.jpg/960px-%2AMisal_Pav%2A.jpg"
+  },
+  "Momos": {
+    "file": "dishes/momos.jpg",
+    "title": "Momos with Sauce.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Momos_with_Sauce.jpg/960px-Momos_with_Sauce.jpg"
+  },
+  "Fried Momos": {
+    "file": "dishes/fried-momos.jpg",
+    "title": "Fried momos of Salem.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Fried_momos_of_Salem.jpg/960px-Fried_momos_of_Salem.jpg"
+  },
+  "Spring Roll": {
+    "file": "dishes/spring-roll.jpg",
+    "title": "Deep Fried Spring Roll.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Deep_Fried_Spring_Roll.jpg/960px-Deep_Fried_Spring_Roll.jpg"
+  },
+  "Paneer Tikka": {
+    "file": "dishes/paneer-tikka.jpg",
+    "title": "Panir Tikka Indian cheese grilled.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Panir_Tikka_Indian_cheese_grilled.jpg"
+  },
+  "Vegetable Cutlet": {
+    "file": "dishes/vegetable-cutlet.jpg",
+    "title": "Vegetable-cutlet.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/3/39/Vegetable-cutlet.jpg"
+  },
+  "Dahi Ke Kebab": {
+    "file": "dishes/dahi-ke-kebab.jpg",
+    "title": "Dahi ke Kebabs.JPG",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Dahi_ke_Kebabs.JPG/960px-Dahi_ke_Kebabs.JPG"
+  },
+  "Onion Bhaji": {
+    "file": "dishes/onion-bhaji.jpg",
+    "title": "Dalma Rice Meal with curd and Kunduri(Tindly)-Aloo Bhaji.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Dalma_Rice_Meal_with_curd_and_Kunduri%28Tindly%29-Aloo_Bhaji.jpg/960px-Dalma_Rice_Meal_with_curd_and_Kunduri%28Tindly%29-Aloo_Bhaji.jpg"
+  },
+  "Mix Veg Pakora": {
+    "file": "dishes/mix-veg-pakora.jpg",
+    "title": "Veg Mix Pakore.JPG",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Veg_Mix_Pakore.JPG/960px-Veg_Mix_Pakore.JPG"
+  },
+  "Paneer 65": {
+    "file": "dishes/paneer-65.jpg",
+    "title": "A full plate chilli paneer in Kolkata, West Bengal.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/A_full_plate_chilli_paneer_in_Kolkata%2C_West_Bengal.jpg/960px-A_full_plate_chilli_paneer_in_Kolkata%2C_West_Bengal.jpg"
+  },
+  "Gobi Manchurian": {
+    "file": "dishes/gobi-manchurian.jpg",
+    "title": "Gobi manchurian.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Gobi_manchurian.jpg"
+  },
+  "Chilli Paneer": {
+    "file": "dishes/chilli-paneer.jpg",
+    "title": "A full plate chilli paneer in Kolkata, West Bengal.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/A_full_plate_chilli_paneer_in_Kolkata%2C_West_Bengal.jpg/960px-A_full_plate_chilli_paneer_in_Kolkata%2C_West_Bengal.jpg"
+  },
+  "Veg Manchurian": {
+    "file": "dishes/veg-manchurian.jpg",
+    "title": "Veg manchurian Balls.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Veg_manchurian_Balls.jpg/960px-Veg_manchurian_Balls.jpg"
+  },
+  "Cheese Corn Nuggets": {
+    "file": "dishes/cheese-corn-nuggets.jpg",
+    "title": "Nugget shape corn snack (sour cream & onion flavour) P1.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Nugget_shape_corn_snack_%28sour_cream_%26_onion_flavour%29_P1.jpg/960px-Nugget_shape_corn_snack_%28sour_cream_%26_onion_flavour%29_P1.jpg"
+  },
+  "French Fries": {
+    "file": "dishes/french-fries.jpg",
+    "title": "French Fries.JPG",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/8/83/French_Fries.JPG"
+  },
+  "Nachos Salsa": {
+    "file": "dishes/nachos-salsa.jpg",
+    "title": "Nachos y salsa.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Nachos_y_salsa.jpg/960px-Nachos_y_salsa.jpg"
+  },
+  "Garlic Bread": {
+    "file": "dishes/garlic-bread.jpg",
+    "title": "Manul bread (Manurupan), Garlic bread.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Manul_bread_%28Manurupan%29%2C_Garlic_bread.jpg/960px-Manul_bread_%28Manurupan%29%2C_Garlic_bread.jpg"
+  },
+  "Bruschetta": {
+    "file": "dishes/bruschetta.jpg",
+    "title": "Bruschetta.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Bruschetta.jpg/960px-Bruschetta.jpg"
+  },
+  "Hummus Pita": {
+    "file": "dishes/hummus-pita.jpg",
+    "title": "Pita bread hummus new york times starbucks.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Pita_bread_hummus_new_york_times_starbucks.jpg/960px-Pita_bread_hummus_new_york_times_starbucks.jpg"
+  },
+  "Corn Chat": {
+    "file": "dishes/corn-chat.jpg",
+    "title": "Corn Chat.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Corn_Chat.jpg/960px-Corn_Chat.jpg"
+  },
+  "Ragda Pattice": {
+    "file": "dishes/ragda-pattice.jpg",
+    "title": "Ragda pattice.JPG",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Ragda_pattice.JPG/960px-Ragda_pattice.JPG"
+  },
+  "Sev Puri": {
+    "file": "dishes/sev-puri.jpg",
+    "title": "Sev Puri.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Sev_Puri.jpg/960px-Sev_Puri.jpg"
+  },
+  "Aloo Chop": {
+    "file": "dishes/aloo-chop.jpg",
+    "title": "Aloo chop -Bengali potato snack- Kolkata - West Bengal - DSC 0013.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Aloo_chop_-Bengali_potato_snack-_Kolkata_-_West_Bengal_-_DSC_0013.jpg/960px-Aloo_chop_-Bengali_potato_snack-_Kolkata_-_West_Bengal_-_DSC_0013.jpg"
+  },
+  "Kachori": {
+    "file": "dishes/kachori.jpg",
+    "title": "Kachori sabzi.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Kachori_sabzi.jpg"
+  },
+  "Mathri": {
+    "file": "dishes/mathri.jpg",
+    "title": "Mathri.JPG",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Mathri.JPG/960px-Mathri.JPG"
+  },
+  "Namak Pare": {
+    "file": "dishes/namak-pare.jpg",
+    "title": "Namak Pare.JPG",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Namak_Pare.JPG/960px-Namak_Pare.JPG"
+  },
+  "Murmura Chivda": {
+    "file": "dishes/murmura-chivda.jpg",
+    "title": "Puffed rice.JPG",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Puffed_rice.JPG/960px-Puffed_rice.JPG"
+  },
+  "Sukhi Bhel": {
+    "file": "dishes/sukhi-bhel.jpg",
+    "title": "Bhel Puri at Juhu Beach.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Bhel_Puri_at_Juhu_Beach.jpg/960px-Bhel_Puri_at_Juhu_Beach.jpg"
+  },
+  "Egg Chaat": {
+    "file": "dishes/egg-chaat.jpg",
+    "title": "Boiled Egg - Crossection.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Boiled_Egg_-_Crossection.jpg/960px-Boiled_Egg_-_Crossection.jpg"
+  },
+  "Chicken Pakora": {
+    "file": "dishes/chicken-pakora.jpg",
+    "title": "Chicken Pakora .JPG",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Chicken_Pakora_.JPG/960px-Chicken_Pakora_.JPG"
+  },
+  "Chicken 65": {
+    "file": "dishes/chicken-65.jpg",
+    "title": "Chicken 65 (Dish).jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Chicken_65_%28Dish%29.jpg/960px-Chicken_65_%28Dish%29.jpg"
+  },
+  "Butter Chicken": {
+    "file": "dishes/butter-chicken.jpg",
+    "title": "Butter Chicken (2446546141).jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Butter_Chicken_%282446546141%29.jpg/960px-Butter_Chicken_%282446546141%29.jpg"
+  },
+  "Chicken Curry": {
+    "file": "dishes/chicken-curry.jpg",
+    "title": "Chicken Curry 4.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Chicken_Curry_4.jpg/960px-Chicken_Curry_4.jpg"
+  },
+  "Chicken Tikka Masala": {
+    "file": "dishes/chicken-tikka-masala.jpg",
+    "title": "Chicken tikka masala.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Chicken_tikka_masala.jpg/960px-Chicken_tikka_masala.jpg"
+  },
+  "Chicken Biryani": {
+    "file": "dishes/chicken-biryani.jpg",
+    "title": "Chicken biryani 02-06-2015 (India).jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Chicken_biryani_02-06-2015_%28India%29.jpg/960px-Chicken_biryani_02-06-2015_%28India%29.jpg"
+  },
+  "Chicken Handi": {
+    "file": "dishes/chicken-handi.jpg",
+    "title": "Chicken Handi.JPG",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Chicken_Handi.JPG/960px-Chicken_Handi.JPG"
+  },
+  "Kadhai Chicken": {
+    "file": "dishes/kadhai-chicken.jpg",
+    "title": "Kadhai Chicken.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Kadhai_Chicken.jpg"
+  },
+  "Chicken Do Pyaza": {
+    "file": "dishes/chicken-do-pyaza.jpg",
+    "title": "Chicken do pyaza.JPG",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Chicken_do_pyaza.JPG/960px-Chicken_do_pyaza.JPG"
+  },
+  "Mutton Rogan Josh": {
+    "file": "dishes/mutton-rogan-josh.jpg",
+    "title": "Mutton rogan josh.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Mutton_rogan_josh.jpg/960px-Mutton_rogan_josh.jpg"
+  },
+  "Mutton Curry": {
+    "file": "dishes/mutton-curry.jpg",
+    "title": "Odia Mutton Curry (Mansha Tarkari).jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Odia_Mutton_Curry_%28Mansha_Tarkari%29.jpg/960px-Odia_Mutton_Curry_%28Mansha_Tarkari%29.jpg"
+  },
+  "Mutton Korma": {
+    "file": "dishes/mutton-korma.jpg",
+    "title": "Mutton Korma.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Mutton_Korma.jpg/960px-Mutton_Korma.jpg"
+  },
+  "Chicken Chettinad": {
+    "file": "dishes/chicken-chettinad.jpg",
+    "title": "Chicken Chettinad.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Chicken_Chettinad.jpg/960px-Chicken_Chettinad.jpg"
+  },
+  "Chicken Vindaloo": {
+    "file": "dishes/chicken-vindaloo.jpg",
+    "title": "Chicken Vindaloo.jpeg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Chicken_Vindaloo.jpeg"
+  },
+  "Egg Curry": {
+    "file": "dishes/egg-curry.jpg",
+    "title": "Egg curry pic.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Egg_curry_pic.jpg/960px-Egg_curry_pic.jpg"
+  },
+  "Anda Bhurji": {
+    "file": "dishes/anda-bhurji.jpg",
+    "title": "Egg bhurji(anda bhurji).jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Egg_bhurji%28anda_bhurji%29.jpg/960px-Egg_bhurji%28anda_bhurji%29.jpg"
+  },
+  "Fish Curry": {
+    "file": "dishes/fish-curry.jpg",
+    "title": "Rice and fish curry.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Rice_and_fish_curry.jpg/960px-Rice_and_fish_curry.jpg"
+  },
+  "Bengali Fish Curry": {
+    "file": "dishes/bengali-fish-curry.jpg",
+    "title": "Bengali Fish curry.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Bengali_Fish_curry.jpg/960px-Bengali_Fish_curry.jpg"
+  },
+  "Prawn Curry": {
+    "file": "dishes/prawn-curry.jpg",
+    "title": "Prawn curry with rice.JPG",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Prawn_curry_with_rice.JPG/960px-Prawn_curry_with_rice.JPG"
+  },
+  "Prawn Pulao": {
+    "file": "dishes/prawn-pulao.jpg",
+    "title": "Picture of tasty Prawn pulao.JPG",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Picture_of_tasty_Prawn_pulao.JPG/960px-Picture_of_tasty_Prawn_pulao.JPG"
+  },
+  "Grilled Chicken": {
+    "file": "dishes/grilled-chicken.jpg",
+    "title": "Grilled chicken in Thailand.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Grilled_chicken_in_Thailand.jpg/960px-Grilled_chicken_in_Thailand.jpg"
+  },
+  "Chicken Sizzler": {
+    "file": "dishes/chicken-sizzler.jpg",
+    "title": "Chicken Sizzlers-LULU Mall Edappally-Kerala-IMG 20210307 162748.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Chicken_Sizzlers-LULU_Mall_Edappally-Kerala-IMG_20210307_162748.jpg/960px-Chicken_Sizzlers-LULU_Mall_Edappally-Kerala-IMG_20210307_162748.jpg"
+  },
+  "Chicken Noodles": {
+    "file": "dishes/chicken-noodles.jpg",
+    "title": "Chicken noodles soup.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Chicken_noodles_soup.jpg/960px-Chicken_noodles_soup.jpg"
+  },
+  "Egg Fried Rice": {
+    "file": "dishes/egg-fried-rice.jpg",
+    "title": "Egg Fried Rice.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Egg_Fried_Rice.jpg/960px-Egg_Fried_Rice.jpg"
+  },
+  "Veg Fried Rice": {
+    "file": "dishes/veg-fried-rice.jpg",
+    "title": "VEG FRIED RICE.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/VEG_FRIED_RICE.jpg/960px-VEG_FRIED_RICE.jpg"
+  },
+  "Masala Pasta": {
+    "file": "dishes/masala-pasta.jpg",
+    "title": "Mixed vegetable masala pasta.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/7/73/Mixed_vegetable_masala_pasta.jpg"
+  },
+  "Margherita Pizza": {
+    "file": "dishes/margherita-pizza.jpg",
+    "title": "Margherita Pizza of The Point Pizza and Point.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Margherita_Pizza_of_The_Point_Pizza_and_Point.jpg/960px-Margherita_Pizza_of_The_Point_Pizza_and_Point.jpg"
+  },
+  "Mushroom Risotto": {
+    "file": "dishes/mushroom-risotto.jpg",
+    "title": "Mushroom Risotto (4789418371).jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Mushroom_Risotto_%284789418371%29.jpg/960px-Mushroom_Risotto_%284789418371%29.jpg"
+  },
+  "Stir Fry Vegetables": {
+    "file": "dishes/stir-fry-vegetables.jpg",
+    "title": "Stir fry veggie with stir fry vegetables.JPG",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Stir_fry_veggie_with_stir_fry_vegetables.JPG/960px-Stir_fry_veggie_with_stir_fry_vegetables.JPG"
+  },
+  "Tofu Stir Fry": {
+    "file": "dishes/tofu-stir-fry.jpg",
+    "title": "Tofu stir-fry.jpeg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Tofu_stir-fry.jpeg/960px-Tofu_stir-fry.jpeg"
+  },
+  "Soya Chunk Curry": {
+    "file": "dishes/soya-chunk-curry.jpg",
+    "title": "Nutrela Soya Chunks Curry.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Nutrela_Soya_Chunks_Curry.jpg/960px-Nutrela_Soya_Chunks_Curry.jpg"
+  },
+  "Paneer Lababdar": {
+    "file": "dishes/paneer-lababdar.jpg",
+    "title": "Aloo Gobi And Paneer Lababdar - The Indismart Hotel - Salt Lake City - Kolkata 2023-09-10 5205.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Aloo_Gobi_And_Paneer_Lababdar_-_The_Indismart_Hotel_-_Salt_Lake_City_-_Kolkata_2023-09-10_5205.jpg/960px-Aloo_Gobi_And_Paneer_Lababdar_-_The_Indismart_Hotel_-_Salt_Lake_City_-_Kolkata_2023-09-10_5205.jpg"
+  },
+  "Palak Mushroom": {
+    "file": "dishes/palak-mushroom.jpg",
+    "title": "Palak Paneer (Cottage cheese in spinach gravy).jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Palak_Paneer_%28Cottage_cheese_in_spinach_gravy%29.jpg/960px-Palak_Paneer_%28Cottage_cheese_in_spinach_gravy%29.jpg"
+  },
+  "Bhindi Do Pyaza": {
+    "file": "dishes/bhindi-do-pyaza.jpg",
+    "title": "Bhindi Do Pyaza.JPG",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Bhindi_Do_Pyaza.JPG/960px-Bhindi_Do_Pyaza.JPG"
+  },
+  "Kathal Masala": {
+    "file": "dishes/kathal-masala.jpg",
+    "title": "Raw Jackfruit Curry.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Raw_Jackfruit_Curry.jpg/960px-Raw_Jackfruit_Curry.jpg"
+  },
+  "Dum Aloo": {
+    "file": "dishes/dum-aloo.jpg",
+    "title": "Dum Aloo Kashmiri India.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Dum_Aloo_Kashmiri_India.jpg/960px-Dum_Aloo_Kashmiri_India.jpg"
+  },
+  "Kofta Pulao": {
+    "file": "dishes/kofta-pulao.jpg",
+    "title": "Vegetable pulao.JPG",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Vegetable_pulao.JPG/960px-Vegetable_pulao.JPG"
+  },
+  "Rajma Paneer Combo": {
+    "file": "dishes/rajma-paneer-combo.jpg",
+    "title": "Rajma Chawal.JPG",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Rajma_Chawal.JPG/960px-Rajma_Chawal.JPG"
+  },
+  "Kerala Fish Moilee": {
+    "file": "dishes/kerala-fish-moilee.jpg",
+    "title": "Fish Moilee Kerala Style.JPG",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Fish_Moilee_Kerala_Style.JPG/960px-Fish_Moilee_Kerala_Style.JPG"
+  },
+  "Mutton Keema Mattar": {
+    "file": "dishes/mutton-keema-mattar.jpg",
+    "title": "Keema Pao with Hari Chutney.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Keema_Pao_with_Hari_Chutney.jpg/960px-Keema_Pao_with_Hari_Chutney.jpg"
+  },
+  "Shami Kebab": {
+    "file": "dishes/shami-kebab.jpg",
+    "title": "Shami Kebab.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Shami_Kebab.jpg/960px-Shami_Kebab.jpg"
+  },
+  "Fish Masala Fry": {
+    "file": "dishes/fish-masala-fry.jpg",
+    "title": "Fish Masala Fry.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Fish_Masala_Fry.jpg/960px-Fish_Masala_Fry.jpg"
+  },
+  "Chicken Soup": {
+    "file": "dishes/chicken-soup.jpg",
+    "title": "Double Boiled Chicken Soup with Chinese Herbs.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Double_Boiled_Chicken_Soup_with_Chinese_Herbs.jpg"
+  },
+  "Manchow Soup": {
+    "file": "dishes/manchow-soup.jpg",
+    "title": "Manchow soup.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Manchow_soup.jpg/960px-Manchow_soup.jpg"
+  },
+  "Masala Dosa": {
+    "file": "dishes/masala-dosa.jpg",
+    "title": "Masala dosa 01.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Masala_dosa_01.jpg/960px-Masala_dosa_01.jpg"
+  },
+  "Besan Chilla": {
+    "file": "dishes/besan-chilla.jpg",
+    "title": "Besan chilla.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Besan_chilla.jpg/960px-Besan_chilla.jpg"
+  },
+  "Medu Vada": {
+    "file": "dishes/medu-vada.jpg",
+    "title": "Aesthetic Medu Vadai.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Aesthetic_Medu_Vadai.jpg/960px-Aesthetic_Medu_Vadai.jpg"
+  },
+  "Curd Rice": {
+    "file": "dishes/curd-rice.jpg",
+    "title": "Curd Rice.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Curd_Rice.jpg/960px-Curd_Rice.jpg"
+  },
+  "Malai Kofta": {
+    "file": "dishes/malai-kofta.jpg",
+    "title": "Malai Kofta.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Malai_Kofta.jpg/960px-Malai_Kofta.jpg"
+  },
+  "Pani Puri": {
+    "file": "dishes/pani-puri.jpg",
+    "title": "Golgappa Pani Puri India.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Golgappa_Pani_Puri_India.jpg/960px-Golgappa_Pani_Puri_India.jpg"
+  },
+  "Hara Bhara Kebab": {
+    "file": "dishes/hara-bhara-kebab.jpg",
+    "title": "Hara Bhara kebab with cheese.jpg",
+    "source": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Hara_Bhara_kebab_with_cheese.jpg"
+  },
+  "Cheese Quesadilla": {
+    "file": "dishes/cheese-quesadilla.jpg",
+    "title": "Cheese quesadilla.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Cheese_quesadilla.jpg/960px-Cheese_quesadilla.jpg"
+  },
+  "Chicken Tikka": {
+    "file": "dishes/chicken-tikka.jpg",
+    "title": "Chicken-Tikka.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Chicken-Tikka.jpg/960px-Chicken-Tikka.jpg"
+  },
+  "Fish Fry": {
+    "file": "dishes/fish-fry.jpg",
+    "title": "Fish fry (55761).jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Fish_fry_%2855761%29.jpg/960px-Fish_fry_%2855761%29.jpg"
+  },
+  "White Sauce Pasta": {
+    "file": "dishes/white-sauce-pasta.jpg",
+    "title": "White sauce pasta.jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/White_sauce_pasta.jpg/960px-White_sauce_pasta.jpg"
+  },
+  "Chettinad Egg Curry": {
+    "file": "dishes/chettinad-egg-curry.jpg",
+    "title": "Chettinad Egg Curry (15729005817).jpg",
+    "source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Chettinad_Egg_Curry_%2815729005817%29.jpg/960px-Chettinad_Egg_Curry_%2815729005817%29.jpg"
+  },
+  "__fallback__": {
+    "file": "dishes/fallback.jpg",
+    "title": "1 Thali Indian Food.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:1_Thali_Indian_Food.jpg"
+  }
+}

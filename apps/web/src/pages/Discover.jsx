@@ -14,7 +14,7 @@ const TABS = [
 
 const STATES = ['All','Punjab','Delhi','Rajasthan','Gujarat','Maharashtra','West Bengal','Kerala','Tamil Nadu','Karnataka','Andhra Pradesh','Telangana','Bihar','Uttar Pradesh','Madhya Pradesh','Assam','Odisha','Himachal Pradesh','Sikkim','Jammu & Kashmir'];
 
-const FALLBACK = 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=800';
+const FALLBACK = '/dishes/fallback.jpg';
 
 export default function Discover() {
   const [mood, setMood] = useState('all');
