@@ -9,9 +9,15 @@ export default function SearchPage() {
   const [q, setQ] = useState('');
   const { data, isFetching } = useQuery({
     queryKey: ['search', q],
-    queryFn: () => api.get('/search?q=' + encodeURIComponent(q)),
+    queryFn: () => api.get('/search?q=' + encodeURIComponent(q) + '&ai=0'),
     enabled: q.length >= 2,
-    staleTime: 30000
+    staleTime: 5 * 60 * 1000
+  });
+  const { data: aiData } = useQuery({
+    queryKey: ['search-ai', q],
+    queryFn: () => api.get('/search/ai?q=' + encodeURIComponent(q)),
+    enabled: q.length >= 2,
+    staleTime: 10 * 60 * 1000
   });
 
   return (
@@ -29,7 +35,7 @@ export default function SearchPage() {
           </div>
           <div>
             <h3 className='text-label-lg font-semibold'>Discover unique dishes</h3>
-            <p className='text-body-sm text-white/80'>AI picks · YouTube recipes · regional gems</p>
+            <p className='text-body-sm text-white/80'>AI picks Â· YouTube recipes Â· regional gems</p>
           </div>
         </div>
         <Icon name='chevron_right' size={24} className='shrink-0' />
@@ -40,7 +46,7 @@ export default function SearchPage() {
           <Icon name='search' size={20} />
         </div>
         <input value={q} onChange={e => setQ(e.target.value)} autoFocus
-          placeholder='Search ingredients, dishes, anything…'
+          placeholder='Search ingredients, dishes, anythingâ€¦'
           className='w-full border border-outline-variant rounded-xl pl-10 pr-10 py-3 bg-surface-container-lowest text-body-lg placeholder:text-on-surface-variant focus:ring-2 focus:ring-primary/30 focus:border-primary outline-none transition' />
         {isFetching && (
           <div className='absolute right-3 top-1/2 -translate-y-1/2 text-primary animate-spin'>
@@ -51,16 +57,22 @@ export default function SearchPage() {
 
       {data && (
         <div className='flex flex-col gap-4'>
-          {data.ai && (
+          {aiData === undefined && (
+            <p className='text-body-sm text-on-surface-variant'>AI answer is loading...</p>
+          )}
+          {aiData && !aiData.ai && aiData.aiEnabled && (
+            <p className='text-body-sm text-on-surface-variant'>AI answer unavailable right now.</p>
+          )}
+          {aiData?.ai && (
             <div className='bg-surface-container-lowest border border-primary/30 rounded-xl p-5 shadow-sm'>
               <h3 className='font-heading text-headline-sm text-on-surface flex items-center gap-2'>
                 <Icon name='auto_awesome' size={18} className='text-primary' /> AI answer
               </h3>
-              <p className='mt-2 text-body-md text-on-surface leading-relaxed'>{data.ai.answer}</p>
-              {data.ai.suggestions?.length > 0 && (
+              <p className='mt-2 text-body-md text-on-surface leading-relaxed'>{aiData.ai.answer}</p>
+              {aiData.ai.suggestions?.length > 0 && (
                 <div className='mt-3 flex flex-wrap gap-1.5'>
-                  {data.ai.suggestions.map((s, i) => (
-                    <span key={i} className='text-label-md bg-surface-container rounded-full px-2.5 py-1 text-on-surface-variant'>{s.name} · {s.qty}</span>
+                  {aiData.ai.suggestions.map((s, i) => (
+                    <span key={i} className='text-label-md bg-surface-container rounded-full px-2.5 py-1 text-on-surface-variant'>{s.name} Â· {s.qty}</span>
                   ))}
                 </div>
               )}
@@ -78,7 +90,7 @@ export default function SearchPage() {
             {data.local.ingredients.map(i => (
               <div key={i.name} className='flex justify-between text-body-md py-2 border-b border-surface-container last:border-0'>
                 <span className='text-on-surface font-medium'>{i.name} <span className='text-on-surface-variant font-normal'>{i.nameHi}</span></span>
-                <span className='text-on-surface-variant'>₹{i.avgPriceINR}/{i.unit}</span>
+                <span className='text-on-surface-variant'>â‚¹{i.avgPriceINR}/{i.unit}</span>
               </div>
             ))}
           </div>
@@ -94,7 +106,7 @@ export default function SearchPage() {
                   <DishThumb src={d.imageUrl} name={d.name} iconSize={18} className='w-9 h-9 rounded-lg shrink-0' />
                   <span className='text-on-surface font-medium truncate'>{d.name}</span>
                 </span>
-                <span className='text-on-surface-variant shrink-0'>{d.cuisine} · ₹{d.estimatedCostPerServingINR}</span>
+                <span className='text-on-surface-variant shrink-0'>{d.cuisine} Â· â‚¹{d.estimatedCostPerServingINR}</span>
               </div>
             ))}
           </div>
@@ -108,7 +120,7 @@ export default function SearchPage() {
               <div key={i} className='py-2 border-b border-surface-container last:border-0'>
                 {e.url ? <a href={e.url} target='_blank' rel='noreferrer' className='text-body-md text-primary underline font-medium'>{e.name}</a>
                   : <p className='text-body-md text-on-surface font-medium'>{e.name}</p>}
-                <p className='text-body-sm text-on-surface-variant'>{[e.brand, e.quantity, e.nutriScore && 'Nutri-Score ' + e.nutriScore.toUpperCase()].filter(Boolean).join(' · ')}</p>
+                <p className='text-body-sm text-on-surface-variant'>{[e.brand, e.quantity, e.nutriScore && 'Nutri-Score ' + e.nutriScore.toUpperCase()].filter(Boolean).join(' Â· ')}</p>
               </div>
             ))}
           </div>
@@ -117,3 +129,5 @@ export default function SearchPage() {
     </div>
   );
 }
+
+

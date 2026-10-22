@@ -20,9 +20,10 @@ export async function chatJSON(messages, { perModelTimeoutMs = 12000, totalTimeo
   let lastErr = null;
 
   for (const model of models) {
-    if (Date.now() > deadline) break;
+    const remaining = deadline - Date.now();
+    if (remaining <= 0) break;
     const ctrl = new AbortController();
-    const timer = setTimeout(() => ctrl.abort(), perModelTimeoutMs);
+    const timer = setTimeout(() => ctrl.abort(), Math.max(500, Math.min(perModelTimeoutMs, remaining)));
     try {
       const res = await fetch(base + '/chat/completions', {
         method: 'POST',

@@ -165,7 +165,7 @@ export async function generateAIRecipe({ items, spiceTarget, household, catalog 
         'Ingredients I have right now: ' + items.join(', ') + '. ' +
         dietHint + ' Spice level: ' + spiceHint + '. What single dish should I cook?'
     }
-  ]);
+  ], { perModelTimeoutMs: 7000, totalTimeoutMs: 11000 });
   try {
     if (!p) return null;
     const steps = (Array.isArray(p.steps) ? p.steps : [])
@@ -211,6 +211,31 @@ export async function generateAIRecipe({ items, spiceTarget, household, catalog 
   }
 }
 
+// Repeated "cook with what I have" taps reuse the same AI recipe instead of
+// paying for another model round-trip; the recipe stays valid for half an hour.
+const AI_TTL = 30 * 60 * 1000;
+const aiCache = new Map();
+
+function aiCacheKey(items, spiceTarget, household) {
+  const diets = ((household && household.members) || []).map(m => m.diet).sort().join(',');
+  return diets + '|' + spiceTarget + '|' + items.map(i => String(i).toLowerCase()).sort().join(',');
+}
+
+async function cachedAIRecipe(args) {
+  const key = aiCacheKey(args.items, args.spiceTarget, args.household);
+  const hit = aiCache.get(key);
+  if (hit && Date.now() - hit.at < AI_TTL) return hit.recipe;
+  const recipe = await generateAIRecipe(args);
+  if (recipe) {
+    aiCache.set(key, { at: Date.now(), recipe });
+    if (aiCache.size > 100) {
+      const oldest = [...aiCache.entries()].sort((a, b) => a[1].at - b[1].at)[0];
+      if (oldest) aiCache.delete(oldest[0]);
+    }
+  }
+  return recipe;
+}
+
 export async function cookWithWhatIHave(input, catalog, profile, household, dishes = []) {
   const resolved = normalizeIngredientInput(input, catalog);
 
@@ -226,8 +251,12 @@ export async function cookWithWhatIHave(input, catalog, profile, household, dish
   const realItems = userItems.filter(r => !SEASONING.has(r.ingredient.category));
   const canCook = resolved.length >= 2 && (realItems.length >= 1 || unmatched.length >= 1);
 
-  const aiOption = canCook
-    ? await generateAIRecipe({
+  // If the recipe bank already covers the pantry well, answer instantly with
+  // real seeded recipes (with photos + steps) instead of waiting on the LLM.
+  const strongCatalog = catalogOptions.length >= 2 && catalogOptions[0].coverage >= 0.8;
+
+  const aiOption = canCook && !strongCatalog
+    ? await cachedAIRecipe({
         items: resolved.map(r => r.ingredient ? r.ingredient.name : r.raw),
         spiceTarget: (profile && profile.spiceTarget) || 3,
         household,

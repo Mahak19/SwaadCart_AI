@@ -9,10 +9,20 @@ function withTimeout(ms) {
   return { signal: ctrl.signal, done: () => clearTimeout(t) };
 }
 
+const CATALOGUE_TTL = 5 * 60 * 1000;
+let catalogue = { at: 0, ings: [], dishes: [] };
+
+async function loadCatalogue() {
+  if (catalogue.ings.length && Date.now() - catalogue.at < CATALOGUE_TTL) return catalogue;
+  const [ings, dishes] = await Promise.all([Ingredient.find().lean(), Dish.find().lean()]);
+  catalogue = { at: Date.now(), ings, dishes };
+  return catalogue;
+}
+
 export async function searchLocal(q, limit = 6) {
   const term = (q || '').trim().toLowerCase();
   if (!term) return { ingredients: [], dishes: [] };
-  const [ings, dishes] = await Promise.all([Ingredient.find().lean(), Dish.find().lean()]);
+  const { ings, dishes } = await loadCatalogue();
 
   const ingredients = ings
     .map(ing => {
@@ -64,7 +74,7 @@ export async function searchLocal(q, limit = 6) {
 export async function searchExternal(q, limit = 5) {
   const term = (q || '').trim();
   if (!term) return [];
-  const { signal, done } = withTimeout(6000);
+  const { signal, done } = withTimeout(4000);
   try {
     const url = 'https://world.openfoodfacts.org/cgi/search.pl?search_terms=' +
       encodeURIComponent(term) +
@@ -100,21 +110,51 @@ export async function searchAI(q) {
       content: 'You are SwaadCart AI, an Indian kitchen assistant. Reply ONLY with JSON: {"answer":"2-3 sentence helpful answer in the user language (Hinglish ok)","suggestions":[{"name":"dish or ingredient","qty":"approx for 2 people"}]}. Max 5 suggestions. Indian food context.'
     },
     { role: 'user', content: q }
-  ]);
+  ], { perModelTimeoutMs: 6000, totalTimeoutMs: 9000 });
 }
 
-export async function hybridSearch(q) {
+const SEARCH_TTL = 10 * 60 * 1000;
+const SEARCH_MAX = 300;
+const searchCache = new Map();
+const aiCache = new Map();
+
+function remember(cache, key, value) {
+  cache.set(key, { at: Date.now(), ...value });
+  if (cache.size > SEARCH_MAX) {
+    const oldest = [...cache.entries()].sort((a, b) => a[1].at - b[1].at)[0];
+    if (oldest) cache.delete(oldest[0]);
+  }
+}
+
+// The UI fetches the AI card separately so typing feels instant even when the
+// model is slow or the provider is having a bad day.
+export async function searchAIAnswer(q) {
+  const key = String(q || '').trim().toLowerCase();
+  const hit = aiCache.get(key);
+  if (hit && Date.now() - hit.at < SEARCH_TTL) return hit.ai;
+  const ai = await searchAI(q);
+  if (ai) remember(aiCache, key, { ai });
+  return ai;
+}
+
+export async function hybridSearch(q, { withAi = true } = {}) {
+  const key = (withAi ? '1|' : '0|') + String(q || '').trim().toLowerCase();
+  const hit = searchCache.get(key);
+  if (hit && Date.now() - hit.at < SEARCH_TTL) return hit.data;
+
   const [local, external, ai] = await Promise.all([
     searchLocal(q),
     searchExternal(q),
-    searchAI(q)
+    withAi ? searchAIAnswer(q) : Promise.resolve(null)
   ]);
-  return {
+  const data = {
     query: q,
     local,
     external,
     ai,
     aiEnabled: aiEnabled()
   };
+  remember(searchCache, key, { data });
+  return data;
 }
 
