@@ -63,6 +63,19 @@ app.use('/api/v1/auth', authLimiter);
 
 app.get('/health', (req, res) => res.json({ status: 'ok', mongo: isDbConnected() ? 'connected' : 'connecting' }));
 
+app.use('/api/v1', (req, res, next) => {
+  if (!isDbConnected()) {
+    return res.status(503).json({
+      error: {
+        code: 'DB_UNAVAILABLE',
+        message: 'Database is not connected yet. Verify MONGODB_URI and the MongoDB Atlas IP access list.',
+        details: null
+      }
+    });
+  }
+  next();
+});
+
 app.use('/api/v1/auth', authRoutes);
 app.use('/api/v1/household', householdRoutes);
 app.use('/api/v1/inventory', inventoryRoutes);
