@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "concurrently \"npm run dev --workspace=apps/api\" \"npm run dev --workspace=apps/web\"",
     "build": "npm run build --workspaces",
+    "start": "npm run start --workspace=apps/api",
     "test": "npm run test --workspaces",
     "seed": "npm run seed --workspace=apps/api",
     "lint": "npm run lint --workspaces"

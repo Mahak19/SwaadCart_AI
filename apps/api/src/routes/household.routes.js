@@ -4,6 +4,7 @@ import { householdScope } from '../middleware/householdScope.js';
 import Household from '../models/Household.js';
 import TasteProfile from '../models/TasteProfile.js';
 import User from '../models/User.js';
+import { env } from '../config/env.js';
 import { asyncHandler } from '../utils/asyncHandler.js';
 import { signAccess } from '../utils/tokens.js';
 
@@ -62,7 +63,7 @@ router.put('/onboarding', asyncHandler(async (req, res) => {
   );
 
   // Re-issue the access token so it carries the new householdId.
-  res.cookie('accessToken', signAccess(user), { httpOnly: true, sameSite: 'lax', secure: false });
+  res.cookie('accessToken', signAccess(user), { httpOnly: true, sameSite: 'lax', secure: env.NODE_ENV === 'production' });
 
   res.json({
     household,

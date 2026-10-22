@@ -53,7 +53,7 @@ export const refresh = asyncHandler(async (req,res)=>{
     const payload = jwt.verify(token,env.JWT_REFRESH_SECRET);
     const user = await User.findById(payload.id);
     if(!user) throw new AppError('Invalid',401,'UNAUTHORIZED');
-    res.cookie('accessToken', signAccess(user), { httpOnly:true, sameSite:'lax', secure:false });
+    res.cookie('accessToken', signAccess(user), { httpOnly:true, sameSite:'lax', secure: env.NODE_ENV === 'production' });
     res.json({ ok:true });
   }catch{
     throw new AppError('Invalid refresh',401,'UNAUTHORIZED');

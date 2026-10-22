@@ -2,6 +2,9 @@
 import cors from 'cors';
 import helmet from 'helmet';
 import hpp from 'hpp';
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 import mongoSanitize from 'express-mongo-sanitize';
 import rateLimit from 'express-rate-limit';
 import cookieParser from 'cookie-parser';
@@ -30,7 +33,23 @@ const app = express();
 const logger = pino({ level: env.LOG_LEVEL });
 
 app.use(pinoHttp({ logger }));
-app.use(helmet());
+app.use(helmet({
+  contentSecurityPolicy: {
+    directives: {
+      defaultSrc: ["'self'"],
+      scriptSrc: ["'self'"],
+      styleSrc: ["'self'", "'unsafe-inline'"],
+      imgSrc: ["'self'", 'data:', 'blob:', 'https:'],
+      fontSrc: ["'self'", 'data:', 'https:'],
+      connectSrc: ["'self'", 'https:'],
+      mediaSrc: ["'self'", 'data:', 'https:'],
+      frameSrc: ["'self'", 'https://www.youtube.com'],
+      objectSrc: ["'none'"],
+      upgradeInsecureRequests: []
+    }
+  },
+  crossOriginEmbedderPolicy: false
+}));
 app.use(cors({ origin: env.CLIENT_ORIGIN, credentials: true }));
 app.use(cookieParser());
 app.use(express.json({ limit: '100kb' }));
@@ -58,6 +77,17 @@ app.use('/api/v1/dashboard', dashboardRoutes);
 app.use('/api/v1/catalog', catalogRoutes);
 app.use('/api/v1/search', searchRoutes);
 app.use('/api/v1/discover', discoverRoutes);
+
+// When the frontend bundle is present, serve it from the same origin so the
+// browser talks to /api/v1 on the same host (no CORS, no separate web service).
+const webDist = path.resolve(fileURLToPath(new URL('../../web/dist', import.meta.url)));
+if (fs.existsSync(path.join(webDist, 'index.html'))) {
+  app.use(express.static(webDist));
+  app.get('*', (req, res, next) => {
+    if (req.path.startsWith('/api') || req.path === '/health') return next();
+    res.sendFile(path.join(webDist, 'index.html'));
+  });
+}
 
 app.use(notFound);
 app.use(errorHandler);

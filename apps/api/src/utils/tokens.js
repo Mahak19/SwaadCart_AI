@@ -14,6 +14,7 @@ export function signRefresh(user) {
 }
 
 export function setAuthCookies(res, user) {
-  res.cookie('accessToken', signAccess(user), { httpOnly: true, sameSite: 'lax', secure: false });
-  res.cookie('refreshToken', signRefresh(user), { httpOnly: true, sameSite: 'lax', secure: false });
+  const secure = env.NODE_ENV === 'production';
+  res.cookie('accessToken', signAccess(user), { httpOnly: true, sameSite: 'lax', secure });
+  res.cookie('refreshToken', signRefresh(user), { httpOnly: true, sameSite: 'lax', secure });
 }
