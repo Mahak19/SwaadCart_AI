@@ -1,0 +1,3 @@
+[
+  { "name": "Potato", "nameHi": "Aloo", "aliases": ["aloo","potato"], "category": "vegetable", "baseUnit": "g", "packSizes": [{"qty": 1000, "priceINR": 40}], "avgPricePerBaseUnitINR": 0.04, "shelfLifeDays": 30 }
+]

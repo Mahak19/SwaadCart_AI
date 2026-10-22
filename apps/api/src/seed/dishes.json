@@ -1,0 +1,3 @@
+[
+  { "name": "Aloo Paratha", "nameHi": "आलू पराठा", "slots": ["breakfast"], "diet": "veg", "cuisine": "north-indian", "spice": 2, "oil": 2, "weight": "medium", "weatherFit": ["mild","cool"], "tags": ["paratha","potato"], "prepMinutes": 20, "estimatedCostPerServingINR": 30, "steps": ["Knead dough", "Stuff potato", "Cook"] }
+]

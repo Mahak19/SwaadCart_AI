@@ -1,0 +1,53 @@
+﻿# Logs
+*.log
+api-dev.log
+web-dev.log
+logs/
+
+# Dev/Build
+node_modules/
+dist/
+build/
+coverage/
+.pnpm-store/
+
+# Env
+.env
+.env.*
+!.env.example
+
+# Editor
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Temp/backup
+*.bak
+*.tmp
+*.swp
+
+# Report build artifacts (root)
+out.pdf
+out2.pdf
+out3.pdf
+out4.pdf
+SwaadCart_AI_Capstone_Report_print.pdf
+SwaadCart_AI_Capstone_Report_new.pdf
+SwaadCart_AI_Capstone_Report_final.pdf
+SwaadCart_AI_Capstone_Report_updated.pdf
+addpagenum.py
+update_report.py
+update_fix.py
+make_diagrams.py
+
+# Extra PDFs in pdf folder (keep only required)
+pdf/*.bak
+pdf/out*.pdf
+pdf/*_new.pdf
+pdf/*_final.pdf
+pdf/*_updated.pdf
+pdf/*_print.pdf
+
+# Extra PPT artifacts if any
+ppt/*.tmp
