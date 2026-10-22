@@ -19,4 +19,14 @@ const envSchema = z.object({
   YOUTUBE_API_KEY: z.string().optional()
 });
 
-export const env = envSchema.parse(process.env);
+const parsed = envSchema.safeParse(process.env);
+if (!parsed.success) {
+  const issues = parsed.error.issues
+    .map(i => `${i.path.join('.')} (${i.message})`)
+    .join(', ');
+  console.error('[config] Invalid environment configuration -> ' + issues);
+  console.error('[config] Required on Render: MONGODB_URI, JWT_ACCESS_SECRET, JWT_REFRESH_SECRET');
+  process.exit(1);
+}
+
+export const env = parsed.data;

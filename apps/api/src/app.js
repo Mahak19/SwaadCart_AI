@@ -11,6 +11,7 @@ import cookieParser from 'cookie-parser';
 import pino from 'pino';
 import pinoHttp from 'pino-http';
 import { env } from './config/env.js';
+import { isDbConnected } from './config/db.js';
 import authRoutes from './routes/auth.routes.js';
 import householdRoutes from './routes/household.routes.js';
 import inventoryRoutes from './routes/inventory.routes.js';
@@ -60,7 +61,7 @@ app.use(mongoSanitize());
 const authLimiter = rateLimit({ windowMs: 15 * 60 * 1000, max: 1000 });
 app.use('/api/v1/auth', authLimiter);
 
-app.get('/health', (req, res) => res.json({ status: 'ok' }));
+app.get('/health', (req, res) => res.json({ status: 'ok', mongo: isDbConnected() ? 'connected' : 'connecting' }));
 
 app.use('/api/v1/auth', authRoutes);
 app.use('/api/v1/household', householdRoutes);
